@@ -22,3 +22,9 @@ p {
 p:hover {
     color: white;
 }
+p:visited {
+    color: white;
+}
+p:active {
+    color: white;
+}
