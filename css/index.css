@@ -1,103 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500');
- html, body {
-     height: 100%;
-     font-family: 'Source Code Pro', monospace;
-     font-size: 14px;
-     background-color: #252423;
+body {
+	margin-top: 50px !important;
+	background-color: #000000 !important;
 }
- a {
-     color: #fff;
-     text-decoration: none;
+.title {
+	font-family: "Press Start 2P";
+	color: white;
+	font-size: 40px;
 }
- .main {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     background-color: #252423;
-     padding-top: 13rem;
-     padding-bottom: 4rem;
+.link {
+	font-family: "Press Start 2P";
+	color: grey;
+	font-size: 20px;
 }
- .title {
-     font-size: 2.5rem;
-     text-transform: uppercase;
-     letter-spacing: 24px;
-     border-bottom: solid 3px;
-     padding-bottom: 1.5rem;
-}
- .title span {
-     letter-spacing: 0.7px;
-}
- .contact {
-     position: relative;
-     width: 100%;
-     background-color: #353535;
-}
- .contact .title {
-     position: absolute;
-     left: 50%;
-     transform: translateX(-50%);
-     top: -1.5rem;
-     color: #fff;
-     border-bottom-color: #fff;
-     border-bottom: solid 3px #fff;
-}
- .contact .content .icon {
-     width: 37px;
-     height: 37px;
-     margin-bottom: 1.5rem;
-}
- .title {
-     width: 245px;
-}
- .content {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-}
- .contact .title {
-     left: 17.5%;
-     transform: translateX(0);
-}
- .contact .content {
-     flex-direction: row;
-}
- .contact .link:not(:last-of-type) {
-     margin-right: 5.5rem;
-}
- .link {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     font-weight: 300;
-     text-transform: capitalize;
-     letter-spacing: 6px;
-     padding-top: 6.5rem;
-     padding-bottom: 3.5rem;
-     background-repeat: no-repeat;
-}
- .email > .icon {
-     background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20width%3D%2237px%22%20height%3D%2237px%22%20viewBox%3D%220%200%2037%2037%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-email%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Liulian-Copy-11%22%20transform%3D%22translate%28-431.000000%2C%20-1691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-email%22%20transform%3D%22translate%28431.000000%2C%201691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Group-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle-8-Copy-6%22%20fill%3D%22%23C1C7CE%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2237%22%20height%3D%2237%22%3E%3C/rect%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20id%3D%22Rectangle-8-Copy-6%22%20fill%3D%22%23FFFFFF%22%20points%3D%220%200%2037%200%2018.2247799%2015.8571429%22%3E%3C/polygon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E');
-}
- .github > .icon {
-     background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20width%3D%2237px%22%20height%3D%2237px%22%20viewBox%3D%220%200%2037%2037%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-git%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Liulian-Copy-11%22%20transform%3D%22translate%28-937.000000%2C%20-1691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-git%22%20transform%3D%22translate%28937.000000%2C%201691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle-8-Copy-5%22%20fill%3D%22%23201D1C%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2237%22%20height%3D%2237%22%3E%3C/rect%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M23%2C26.1173317%20C26.5130141%2C25.0742401%2028.9331626%2C22.7676269%2028.9986379%2C19%20L29%2C19%20L29%2C6%20L23.3295315%2C11.6704685%20C21.7506831%2C11.1554115%2019.9336043%2C10.9074074%2018%2C10.9074074%20C16.0663957%2C10.9074074%2014.2493169%2C11.1554115%2012.6704685%2C11.6704685%20L7%2C6%20L7%2C19%20L7.00136211%2C19%20C7.07288259%2C23.1154831%209.95395127%2C25.4877142%2014%2C26.3740934%20L14%2C37%20L23%2C37%20L23%2C26.1173317%20Z%22%20id%3D%22Combined-Shape%22%20fill%3D%22%23FFFFFF%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E');
-}
- .linkedin > .icon {
-     background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20width%3D%2237px%22%20height%3D%2237px%22%20viewBox%3D%220%200%2037%2037%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-linkedin%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Liulian-Copy-11%22%20transform%3D%22translate%28-600.000000%2C%20-1691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-linkedin%22%20transform%3D%22translate%28600.000000%2C%201691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle-8-Copy%22%20fill%3D%22%234087C9%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2237%22%20height%3D%2237%22%3E%3C/rect%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle-3%22%20fill%3D%22%23FFFFFF%22%20x%3D%227.53703704%22%20y%3D%2213.0740741%22%20width%3D%224.7962963%22%20height%3D%2212.3333333%22%3E%3C/rect%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle-4%22%20fill%3D%22%23FFFFFF%22%20x%3D%2218.5%22%20y%3D%2213.0740741%22%20width%3D%2211.6481481%22%20height%3D%2212.3333333%22%3E%3C/rect%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E');
-}
- .twitter > .icon {
-     background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20width%3D%2237px%22%20height%3D%2237px%22%20viewBox%3D%220%200%2037%2037%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-twitter%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Liulian-Copy-11%22%20transform%3D%22translate%28-768.000000%2C%20-1691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-twitter%22%20transform%3D%22translate%28768.000000%2C%201691.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle-8-Copy-4%22%20fill%3D%22%23CDE5FF%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2237%22%20height%3D%2237%22%3E%3C/rect%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M18.64%2C30.4%20L19.432%2C23.92%20L16.12%2C23.92%20L15.328%2C30.4%20L11.8%2C30.4%20L12.592%2C23.92%20L10%2C23.92%20L10%2C20.032%20L13.06%2C20.032%20L13.492%2C16.576%20L10.72%2C16.576%20L10.72%2C12.688%20L13.996%2C12.688%20L14.68%2C7%20L18.136%2C7%20L17.452%2C12.688%20L20.836%2C12.688%20L21.52%2C7%20L24.976%2C7%20L24.292%2C12.688%20L27.136%2C12.688%20L27.136%2C16.576%20L23.824%2C16.576%20L23.428%2C20.032%20L26.416%2C20.032%20L26.416%2C23.92%20L22.96%2C23.92%20L22.168%2C30.4%20L18.64%2C30.4%20Z%20M19.9%2C20.032%20L20.332%2C16.576%20L16.984%2C16.576%20L16.588%2C20.032%20L19.9%2C20.032%20Z%22%20id%3D%22%23%22%20fill%3D%22%235698E4%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E');
-}
- .copyright {
-     color: #787878;
-     letter-spacing: 4px;
-     padding-top: 10rem;
-}
- .icon {
-     width: 54px;
-     height: 54px;
-     background-repeat: no-repeat;
+p {
+	text-align: center;
+	color: grey;
+	margin: 1%;
+	padding: 0;
+	background-color: transparent;
 }
