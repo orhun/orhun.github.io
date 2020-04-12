@@ -1,89 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.4.0/dist/css/uikit.min.css"
+    />
     <title>Orhun's personal website</title>
-</head>
-
-<body style="background-color: #DCDCDC; margin-top: 25px; margin-bottom: 10px;">
-
-    <div style="text-align: center; font-family: 'Ubuntu Mono'; font-size: 18px;">
-        <img src="img/crow.png">
-        <br> I'm a
-        <strong>GNU/Linux</strong>, <strong>open-source</strong> and <strong>electronics</strong> enthusiast \
-        <br> who thinks simple and always keeps learning.
-        <br>
-        <br> (orhun <strong>λ</strong> ~) who -u
-        <br>
-        <div style="display: inline-block; text-align: left;  white-space:pre;">
-<strong>gpg:</strong> <a href="orhun.gpg" style="text-decoration: none; color:black;">0xB928720AEC532117</a>
-<strong>email:</strong> <a href="mailto:orhunparmaksiz@gmail.com" style="text-decoration: none; color:black;">orhunparmaksiz@gmail.com</a>
-<strong>github:</strong> <a href="https://github.com/orhun" style="text-decoration: none; color:black;">github.com/orhun</a>
-<strong>twitter:</strong> <a href="https://twitter.com/orhunp_" style="text-decoration: none; color:black;">twitter.com/orhunp_</a>
-<strong>linkedin:</strong> <a href="https://www.linkedin.com/in/orhunp/" style="text-decoration: none; color:black;">linkedin.com/in/orhunp</a>
-        </div>
-        <br> (orhun <strong>λ</strong> ~) ls -x projects/
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/kmon" style="text-decoration: none; color:black;"><strong>kmon</strong></a>
-        <br> Linux Kernel Manager and Activity Monitor
-        <br>
-
-        <br>
-        <a href="https://github.com/grapheneX" style="text-decoration: none; color:black;"><strong>grapheneX</strong></a>
-        <br> Automated System Hardening Framework
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/pkgtop" style="text-decoration: none; color:black;"><strong>pkgtop</strong></a>
-        <br> Interactive package manager and resource monitor
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/k3rmit" style="text-decoration: none; color:black;"><strong>k3rmit</strong></a>
-        <br> A VTE-based terminal emulator
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/zps" style="text-decoration: none; color:black;"><strong>zps</strong></a>
-        <br> A small utility for listing and reaping the zombie processes
-        <br>
-
-        <br>
-        <a href="https://github.com/PyObfx" style="text-decoration: none; color:black;"><strong>PyObfx</strong></a>
-        <br> Python obfuscator and packer
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/k3pler" style="text-decoration: none; color:black;"><strong>k3pler</strong></a>
-        <br> Android network connection blocker and packet analyzer
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/PSAUX" style="text-decoration: none; color:black;"><strong>PSAUX</strong></a>
-        <br> Android task manager and automated background service killer
-        <br>
-
-        <br>
-        <a href="https://github.com/RTLion-Framework" style="text-decoration: none; color:black;"><strong>RTLion</strong></a>
-        <br> Multipurpose RTL-SDR Framework for RTL2832 based DVB-T receivers
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/Picasso" style="text-decoration: none; color:black;"><strong>Picasso</strong></a>
-        <br> PIC16F877A based 5V/20MHz development board and PIC programmer
-        <br>
-        <br> (orhun <strong>λ</strong> ~) exit
-        <br>
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #dcdcdc;
+      font-family: "Ubuntu Mono";
+      font-size: 18px;
+    }
+    a {
+      color: inherit !important;
+    }
+    .link {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="uk-container uk-container-xsmall uk-text-center uk-margin-top">
+      <img src="img/crow.png" alt="banner" />
+      <p>
+        I'm a <strong>GNU/Linux</strong>, <strong>open-source</strong> and
+        <strong>electronics</strong> enthusiast \ <br />
+        who thinks simple and always keeps learning.
+      </p>
+      <div class="uk-text-left">(orhun <strong>λ</strong> ~) who -u</div>
+      <ul class="uk-list uk-text-left uk-margin-remove-top">
+        <li>
+          <strong>gpg:</strong> <a href="orhun.gpg">0xB928720AEC532117</a>
+        </li>
+        <li class="uk-margin-remove-top">
+          <strong>email:</strong>
+          <a href="mailto:orhunparmaksiz@gmail.com">orhunparmaksiz@gmail.com</a>
+        </li>
+        <li class="uk-margin-remove-top">
+          <strong>github:</strong>
+          <a href="https://github.com/orhun">github.com/orhun</a>
+        </li>
+        <li class="uk-margin-remove-top">
+          <strong>twitter:</strong>
+          <a href="https://twitter.com/orhunp_">twitter.com/orhunp_</a>
+        </li>
+        <li class="uk-margin-remove-top">
+          <strong>linkedin:</strong>
+          <a href="https://www.linkedin.com/in/orhunp/"
+            >linkedin.com/in/orhunp</a
+          >
+        </li>
+      </ul>
+      <div class="uk-text-left">
+        (orhun <strong>λ</strong> ~) ls -x projects/
+        <ul class="uk-list uk-text-left uk-margin-remove-top">
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/orhun/kmon" class="link"
+              ><strong>kmon</strong></a
+            ><span> - </span>
+            Linux Kernel Manager and Activity Monitor
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/grapheneX" class="link"
+              ><strong>grapheneX</strong></a
+            ><span> - </span>
+            Automated System Hardening Framework
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/orhun/pkgtop" class="link"
+              ><strong>pkgtop</strong></a
+            ><span> - </span>
+            Interactive package manager and resource monitor
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/orhun/k3rmit" class="link"
+              ><strong>k3rmit</strong></a
+            ><span> - </span>
+            A VTE-based terminal emulator
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/orhun/zps" class="link"
+              ><strong>zps</strong></a
+            ><span> - </span>
+            A small utility for listing and reaping the zombie processes
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/PyObfx" class="link"
+              ><strong>PyObfx</strong></a
+            ><span> - </span>
+            Python obfuscator and packer
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/orhun/k3pler" class="link"
+              ><strong>k3pler</strong></a
+            ><span> - </span>
+            Android network connection blocker and packet analyzer
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/orhun/PSAUX" class="link"
+              ><strong>PSAUX</strong></a
+            ><span> - </span>
+            Android task manager and automated background service killer
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/RTLion-Framework" class="link"
+              ><strong>RTLion</strong></a
+            ><span> - </span>
+            Multipurpose RTL-SDR Framework for RTL2832 based DVB-T receivers
+          </li>
+          <li class="uk-margin-remove-top">
+            <a href="https://github.com/orhun/Picasso" class="link"
+              ><strong>Picasso</strong></a
+            ><span> - </span>
+            PIC16F877A based 5V/20MHz development board and PIC programme
+          </li>
+        </ul>
+        (orhun <strong>λ</strong> ~) exit
+      </div>
     </div>
-
-</body>
-<!-- Orhun PARMAKSIZ © 2020 -->
-
+  </body>
 </html>
