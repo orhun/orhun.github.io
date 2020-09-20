@@ -1,121 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
+    <title>orhun(8)</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
-    <title>Orhun's personal website</title>
-</head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: monospace, monospace;
+        font-size: 0.9em;
+        background-color: #1a1c20;
+        filter: invert(100%);
+      }
+      div.container {
+        max-width: 42em;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .command,
+      .argument {
+        font-weight: bold;
+      }
+      div.container div h1 {
+        font-weight: normal;
+      }
+      div,
+      p.indented {
+        margin-bottom: 1em;
+      }
+      div.section div {
+        margin-left: 4em;
+      }
+      p.indented {
+        margin-left: 2em;
+      }
+      a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      ::-moz-selection {
+        color: #e5e3df;
+        background: #1a1c20;
+      }
+      ::selection {
+        color: #e5e3df;
+        background: #1a1c20;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>orhun(8)</h1>
+      </div>
 
-<style>
-    body,
-    html {
-      background-color: #dcdcdc;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-family: "Ubuntu Mono";
-      font-size: 18px;
-    }
-    a {
-      color: inherit !important;
-      text-decoration: none; color:black;
-    }
-    strong {
-        color:#0e0e0e;
-    }
-    center {
-        text-align: center;
-    }
-    left {
-        display: inline-block;
-        text-align: left;
-        white-space: pre;
-    }
-</style>
+      <div class="section">
+        <h2>NAME</h2>
+        <div>
+          <p>orhun — Orhun Parmaksız</p>
+        </div>
+      </div>
 
-<body>
-    <center>
-        <img src="img/crow.png">
-        <br> I'm a
-        <strong>GNU/Linux</strong>, <strong>open-source</strong> and <strong>electronics</strong> enthusiast \
-        <br> who thinks simple and always keeps learning.
-        <br>
-<left>
-(orhun <strong>λ</strong> ~) who -u               
-</left>
-<br>
-<left>
- <strong>pgp:</strong> <a href="orhun.gpg">0xB928720AEC532117</a>
- <strong>irc:</strong> <a href="irc://irc.freenode.net:orhun">irc://irc.freenode.net:orhun</a>
- <strong>github:</strong> <a href="https://github.com/orhun">github.com/orhun</a>
- <strong>twitter:</strong> <a href="https://twitter.com/orhunp_">twitter.com/orhunp_</a>
- <strong>linkedin:</strong> <a href="https://www.linkedin.com/in/orhunp/">linkedin.com/in/orhunp</a><br>
-(orhun <strong>λ</strong> ~) ls -x projects/    <br>
-</left>
-        <br>
-        <a href="https://github.com/orhun/kmon"><strong>kmon</strong></a>
-        <br> Linux Kernel Manager and Activity Monitor
-        <br>
+      <div class="section">
+        <h2>SYNOPSIS</h2>
+        <div>
+          <p>
+            <span class="command">orhun</span> [<span class="argument"
+              >OPTIONS</span
+            >]
+          </p>
+        </div>
+      </div>
 
-        <br>
-        <a href="https://github.com/grapheneX"><strong>grapheneX</strong></a>
-        <br> Automated System Hardening Framework
-        <br>
+      <div class="section">
+        <h2>DESCRIPTION</h2>
+        <div>
+          <p>
+            Open source enthusiast. Mainly into software but likes to deal with
+            hardware. Uses wetware for solving problems about both. Reinvents
+            the wheel occasionally and creates obscure stuff. Packages things
+            for <a href="https://www.archlinux.org/">archlinux</a>(2)
+          </p>
+        </div>
+      </div>
 
-        <br>
-        <a href="https://github.com/orhun/pkgtop"><strong>pkgtop</strong></a>
-        <br> Interactive package manager and resource monitor
-        <br>
+      <div class="section">
+        <h2>OPTIONS</h2>
+        <div>
+          <h3>--hey</h3>
+          <p class="indented">Sends magic bytes for communication</p>
+        </div>
+      </div>
 
-        <br>
-        <a href="https://github.com/orhun/kermit"><strong>kermit</strong></a>
-        <br> A VTE-based, simple and froggy terminal emulator
-        <br>
+      <div class="section">
+        <h2>SUPPORTED EXTENSIONS</h2>
+        <div>
+          <p>*.sh, *.c, *.go, *.rs</p>
+          <p>*.py, *.js, *.java</p>
+        </div>
+      </div>
 
-        <br>
-        <a href="https://github.com/orhun/zps"><strong>zps</strong></a>
-        <br> A small utility for listing and reaping the zombie processes
-        <br>
+      <div class="section">
+        <h2>ENVIRONMENT VARIABLES</h2>
+        <div>
+          <h3>LANG</h3>
+          <p class="indented">en_US.utf-8</p>
+          <h3>
+            <a
+              href="http://keys.gnupg.net/pks/lookup?search=0xB928720AEC532117&fingerprint=on&op=index"
+              >PGP_KEY</a
+            >
+          </h3>
+          <p class="indented">0xB928720AEC532117</p>
+          <h3><a href="irc://irc.freenode.net:orhun">IRC_NICK</a></h3>
+          <p class="indented">freenode::orhun</p>
+        </div>
+      </div>
 
-        <br>
-        <a href="https://github.com/orhun/CoolModFiles"><strong>CoolModFiles</strong></a>
-        <br> A web player that plays some cool MOD files randomly
-        <br>
+      <div class="section">
+        <h2>KNOWN BUGS</h2>
+        <div>
+          <p>Keeps things simple.</p>
+        </div>
+      </div>
 
-        <br>
-        <a href="https://github.com/PyObfx"><strong>PyObfx</strong></a>
-        <br> Python obfuscator and packer
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/k3pler"><strong>k3pler</strong></a>
-        <br> Android network connection blocker and packet analyzer
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/PSAUX"><strong>PSAUX</strong></a>
-        <br> Android task manager and automated background service killer
-        <br>
-
-        <br>
-        <a href="https://github.com/RTLion-Framework"><strong>RTLion</strong></a>
-        <br> Multipurpose RTL-SDR Framework for RTL2832 based DVB-T receivers
-        <br>
-
-        <br>
-        <a href="https://github.com/orhun/Picasso"><strong>Picasso</strong></a>
-        <br> PIC16F877A based 5V/20MHz development board and PIC programmer
-        <br>
-
-        <br> (orhun <strong>λ</strong> ~) exit
-        <br>
-    </center>
-
-</body>
-<!--
-Orhun PARMAKSIZ © 2020
--->
+      <div class="section">
+        <h2>SEE ALSO</h2>
+        <div>
+          <p>
+            <a href="https://github.com/orhun">github</a>(4),
+            <a href="https://twitter.com/orhunp_">twitter</a>(4),
+            <a href="https://www.linkedin.com/in/orhunp/">linkedin</a>(4),
+            <a href="mailto:orhunparmaksiz@gmail.com">email</a>(4)
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
