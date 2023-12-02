@@ -314,6 +314,9 @@
             }
         }
 
+        //makes sure init scroll% is accurate
+        handle_scroll();
+
         document.addEventListener("scroll", (event) => {
             handle_scroll()
         });
