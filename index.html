@@ -114,11 +114,23 @@
         color: #e5e3df;
         background: #1a1c20;
       }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: left;
+        padding: 1px;
+        position: sticky;
+        bottom: 0;
+        max-width: 35em;
+        width: 100%;
+        z-index: 1; 
+      }
+
     </style>
   </head>
   <body>
     <div class="container main">
-      <div class="section">
+      <div class="section" id="starting-tag">
         <h2>NAME</h2>
         <div>
           <p>orhun — Orhun Parmaksız</p>
@@ -270,6 +282,137 @@
           <p>Keeps things simple.</p>
         </div>
       </div>
+      <footer id="line-counter">
+        &nbsp;Manual page orhun(1) 0%
+      </footer>
     </div>
+    <script>
+
+        function scroll_up() {
+            window.scrollBy(0, -20);
+        }
+
+        function scroll_down() {
+            window.scrollBy(0,20);
+        }
+
+        function calc_scroll_percent(scroll_y) {
+            const total_height = document.documentElement.scrollHeight - window.innerHeight;
+            const scroll_percent = (scroll_y / total_height) * 100;
+            return scroll_percent;
+        }
+        function handle_scroll() {
+            scroll_pos = window.scrollY;
+            const line_counter = document.getElementById("line-counter");
+            const scroll_percent = Math.ceil(calc_scroll_percent(scroll_pos));
+            if (scroll_percent==100) {
+                line_counter.innerHTML = "&nbsp;Manual page orhun(1) (END)";
+                line_counter.style.filter = "invert(0%)";
+            } else {
+                line_counter.innerHTML = "&nbsp;Manual page orhun(1) " + scroll_percent + "%";
+                line_counter.style.filter = "invert(0%)";
+            }
+        }
+
+        document.addEventListener("scroll", (event) => {
+            handle_scroll()
+        });
+        function is_number(key) {
+            let is_number = true;
+            switch (key) {
+                case '0':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+                case '5':
+                    break;
+                case '6':
+                    break;
+                case '7':
+                    break;
+                case '8':
+                    break;
+                case '9':
+                    break;
+                default:
+                    is_number = false;
+            }
+            return is_number;
+        }
+        let str_num = "";
+        let was_g_last = false;
+
+        document.addEventListener('keydown', function(e) {
+            const line_counter = document.getElementById("line-counter");
+            let add_num = true;
+            let repeat = 1;
+            let key = e.key;
+            if(key=="Backspace") {
+                str_num = str_num.substr(0, str_num.length - 1);
+                if (str_num.length==0) {
+                    handle_scroll();
+                } else {
+                    line_counter.style.filter = "invert(100%)";
+                    line_counter.innerHTML = ":"+str_num;
+                }
+            } 
+            if(is_number(key) && add_num){
+                str_num = str_num + key;
+                line_counter.style.filter = "invert(100%)";
+                line_counter.innerHTML = ":"+str_num;
+            } else if(add_num==false) {
+                //do nothing
+            } else {
+                if(key=="Escape"){
+                    str_num = "";
+                    was_g_last = false;
+                    repeat = 0;
+                    line_counter.style.filter = "invert(100%)";
+                    line_counter.innerHTML = "ESC";
+                }
+                if(str_num!=""){
+                    repeat = Number(str_num);
+                }
+                if(key=='g'){
+                    if(was_g_last) {
+                        document.documentElement.scrollTop = 0;
+                        handle_scroll();
+                        repeat = 0;
+                    } else {
+                        was_g_last = true;
+                    }
+                } else {
+                    was_g_last = false;
+                }
+                if(key=='G') {
+                    document.documentElement.scrollTop = document.documentElement.scrollHeight;
+                    handle_scroll();
+                    repeat = 0;
+                }
+                switch (key) {
+                    case 'h':
+                        //help Easter egg could go here
+                        break;
+                    case 'j':
+                        for(let i = 0; i < repeat; i++) {
+                            scroll_down();
+                        }
+                        break;
+                    case 'k':
+                        for(let i = 0; i < repeat; i++) {
+                            scroll_up();
+                        }
+                        break;
+                }
+                str_num = "";
+            }
+        });
+    </script>
   </body>
 </html>
