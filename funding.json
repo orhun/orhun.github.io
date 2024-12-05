@@ -19,7 +19,8 @@
         "url": "https://git-cliff.org/"
       },
       "repositoryUrl": {
-        "url": "https://github.com/orhun/git-cliff"
+        "url": "https://github.com/orhun/git-cliff",
+        "wellKnown": "https://github.com/orhun/git-cliff/blob/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["Apache-2.0", "MIT"],
       "tags": [
@@ -40,7 +41,8 @@
         "url": "https://binsider.dev"
       },
       "repositoryUrl": {
-        "url": "https://github.com/orhun/binsider"
+        "url": "https://github.com/orhun/binsider",
+        "wellKnown": "https://github.com/orhun/binsider/blob/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["Apache-2.0", "MIT"],
       "tags": [
