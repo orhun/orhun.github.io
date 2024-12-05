@@ -16,7 +16,8 @@
       "name": "git-cliff",
       "description": "A highly customizable command-line tool for generating changelog files from conventional commits",
       "webpageUrl": {
-        "url": "https://git-cliff.org/"
+        "url": "https://github.com/orhun/git-cliff",
+        "wellKnown": "https://github.com/orhun/git-cliff/blob/main/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
         "url": "https://github.com/orhun/git-cliff",
@@ -38,7 +39,8 @@
       "name": "Binsider",
       "description": "Analyze Linux binaries from the terminal",
       "webpageUrl": {
-        "url": "https://binsider.dev"
+        "url": "https://github.com/orhun/binsider",
+        "wellKnown": "https://github.com/orhun/binsider/blob/main/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
         "url": "https://github.com/orhun/binsider",
@@ -61,30 +63,30 @@
   "funding": {
     "channels": [
       {
-        "guid": "GitHub-Sponsors",
+        "guid": "github-sponsors",
         "type": "other",
         "address": "https://github.com/sponsors/orhun/"
       },
       {
-        "guid": "Buy-me-a-coffee",
+        "guid": "buy-me-a-coffee",
         "type": "other",
         "address": "https://www.buymeacoffee.com/orhun"
       },
       {
-        "guid": "Patreon",
+        "guid": "patreon",
         "type": "other",
         "address": "https://www.patreon.com/join/orhunp"
       }
     ],
     "plans": [
       {
-        "guid": "Sponsorships",
+        "guid": "sponsorships",
         "status": "active",
         "name": "Sustainable full-time development",
         "amount": 5000,
         "currency": "EUR",
         "frequency": "monthly",
-        "channels": ["GitHub-Sponsors", "Buy-me-a-coffee", "Patreon"]
+        "channels": ["github-sponsors", "buy-me-a-coffee", "patreon"]
       }
     ],
     "history": []
