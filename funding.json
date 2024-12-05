@@ -1,0 +1,90 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "individual",
+    "role": "owner",
+    "name": "Orhun Parmaksız",
+    "email": "orhunparmaksiz@gmail.com",
+    "description": "A Rust enthusiast with a deep passion for open-source.\n\nCreator and maintainer of several popular command-line tools, including https://git-cliff.org, https://binsider.dev, and many others.\n\nLeading the https://ratatui.rs project which aims to provide a Rust library for designing text-based user interfaces for system tools & wide variety of other applications.\n\nAn official package maintainer for Arch Linux btw\n\nGitHub: https://github.com/orhun",
+    "webpageUrl": {
+      "url": "https://orhun.dev"
+    }
+  },
+  "projects": [
+    {
+      "guid": "git-cliff",
+      "name": "git-cliff",
+      "description": "A highly customizable command-line tool for generating changelog files from conventional commits",
+      "webpageUrl": {
+        "url": "https://git-cliff.org/"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/orhun/git-cliff"
+      },
+      "licenses": ["Apache-2.0", "MIT"],
+      "tags": [
+        "programming",
+        "developer-tools",
+        "productivity",
+        "automation",
+        "git",
+        "rust",
+        "changelog"
+      ]
+    },
+    {
+      "guid": "binsider",
+      "name": "Binsider",
+      "description": "Analyze Linux binaries from the terminal",
+      "webpageUrl": {
+        "url": "https://binsider.dev"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/orhun/binsider"
+      },
+      "licenses": ["Apache-2.0", "MIT"],
+      "tags": [
+        "programming",
+        "system-tools",
+        "linux",
+        "binary-analysis",
+        "elf",
+        "binary",
+        "terminal",
+        "security",
+        "rust"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "GitHub-Sponsors",
+        "type": "other",
+        "address": "https://github.com/sponsors/orhun/"
+      },
+      {
+        "guid": "Buy-me-a-coffee",
+        "type": "other",
+        "address": "https://www.buymeacoffee.com/orhun"
+      },
+      {
+        "guid": "Patreon",
+        "type": "other",
+        "address": "https://www.patreon.com/join/orhunp"
+      }
+    ],
+    "plans": [
+      {
+        "guid": "Sponsorships",
+        "status": "active",
+        "name": "Sustainable full-time development",
+        "amount": 5000,
+        "currency": "EUR",
+        "frequency": "monthly",
+        "channels": ["GitHub-Sponsors", "Buy-me-a-coffee", "Patreon"]
+      }
+    ],
+    "history": []
+  }
+}
